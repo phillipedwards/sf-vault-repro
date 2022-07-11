@@ -33,6 +33,7 @@ func main() {
 			7. Pulumi up your program w/ refresh...pulumi up -r
 			8. Program should fail.
 			9. Pulumi up with new token should succeed...pulumi up
+			10. Note: vault provider needs to be updated with a valid token prior to stack deletion.
 		*/
 
 		vaultProvider, err := vault.NewProvider(ctx, "vault", &vault.ProviderArgs{
